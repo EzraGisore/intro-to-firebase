@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293059517556",
+    "project_id": "firechart-realtime-ezra",
+    "storage_bucket": "firechart-realtime-ezra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293059517556:android:afef8ff12539bdff43c521",
+        "android_client_info": {
+          "package_name": "com.example.firechart_realtime_ezra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293059517556-ep3224ktouoms8df571tmr0a7msd4jot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB56DSyaJFTTiSXP-aguG4G-kXBhp_D9qU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293059517556-ep3224ktouoms8df571tmr0a7msd4jot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
