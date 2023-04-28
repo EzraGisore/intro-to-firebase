@@ -8,24 +8,70 @@
 
 
     <EditText
-        android:id="@+id/edt_data"
+        android:id="@+id/edt_make"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="98dp"
         android:ems="10"
+        android:hint="Enter Car Make "
         android:inputType="text"
-        android:hint="Enter Data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_save"
+    <EditText
+        android:id="@+id/edt_mod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Save Data"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:hint="Enter Car Model"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edt_make"
+        app:layout_constraintTop_toBottomOf="@+id/edt_make" />
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:hint="Enter Car Price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edt_mod"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mod" />
+
+    <Button
+        android:id="@+id/btn_pht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="29dp"
+        android:text="CAR PHOTO"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cdata"
+        app:layout_constraintStart_toStartOf="@+id/btn_cdata" />
+
+    <Button
+        android:id="@+id/btn_cdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="242dp"
+        android:text="UPLOAD CAR DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_data" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="36dp"
+        android:text="VIEW"
+        app:layout_constraintStart_toStartOf="@+id/btn_cdata"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cdata" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

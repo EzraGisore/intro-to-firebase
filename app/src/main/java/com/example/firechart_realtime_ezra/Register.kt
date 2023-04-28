@@ -1,7 +1,9 @@
 package com.example.firechart_realtime_ezra
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -11,7 +13,7 @@ class Register : AppCompatActivity() {
     lateinit var name_reg:EditText
     lateinit var email_reg:EditText
     lateinit var pass_reg:EditText
-    lateinit var cre_btn:EditText
+    lateinit var cre_btn:Button
     //Initialize firebase
     lateinit var auth:FirebaseAuth
 
@@ -22,7 +24,6 @@ class Register : AppCompatActivity() {
         email_reg = findViewById(R.id.edt_email_reg)
         pass_reg = findViewById(R.id.edt_pass_reg)
         cre_btn = findViewById(R.id.btn_cre_reg)
-
         //Initialize firebase again
         auth = FirebaseAuth.getInstance()
 
@@ -37,7 +38,9 @@ class Register : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email_r, pass_r).addOnCompleteListener(this){
                     if(it.isSuccessful){
                         Toast.makeText(this, "User Created Successfully", Toast.LENGTH_SHORT).show()
-                        //
+                        var gotolog = Intent(this, Login::class.java)
+                        startActivity(gotolog)
+                        finish()
                     }else{
                         Toast.makeText(this, "Failed to Create Account.", Toast.LENGTH_SHORT).show()
                     }

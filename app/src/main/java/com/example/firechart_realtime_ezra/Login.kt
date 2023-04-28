@@ -47,6 +47,7 @@ class Login : AppCompatActivity() {
         reg_btn.setOnClickListener {
             var gotoreg = Intent(this, Register::class.java)
             startActivity(gotoreg)
+            finish()
         }
     }
 }
